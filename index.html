@@ -1,1 +1,551 @@
-hello
+<!DOCTYPE HTML>
+<!--Other interesting font awesome icons: cogs,random,rocket,suitcase,tag,tags,space-shuttle, square-o-->
+<html>
+	<head>
+        <title>Gordon Rudman</title>
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">  
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">  
+        <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="180x180">      
+        <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">      
+        <link rel="icon" type="image/png" href="android-chrome-512x512.png" sizes="512x512">      
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Gordon Rudman" />
+        <meta name="keywords" content="Gordon Rudman, Software, Electronics, Hardware, Blockchain, Cryptocurrencies, Photographer, Photography, 3D Printing, IoT" />
+	
+				<script type="text/javascript"> 	
+					//hack to work around AWS CloudFront / S3 not being able to redirect from http://gordonrudman.com to https://www.gordonrudman.com
+					if (window.location.protocol !== 'https:')
+					{
+						if ( (window.location.href.indexOf("127.0.0.1") === -1) && (window.location.href.indexOf("localhost") === -1) && (window.location.href.indexOf("file:") === -1)) //Don't redirect when debugging
+						{
+							 //The replace() method is different than the previous ways because it rewrites the current page in the history. The current page is wiped, so when you click the “back” button, you go back to the page that now is the last visited one.
+							 window.location.replace("https://www.gordonrudman.com" + window.location.pathname);   //If you want to simulate someone clicking on a link, use  window.location.href  | If you want to simulate an HTTP redirect, use window.location.replace   
+					     }
+				  }
+				</script>
+
+				<!-- Hotjar Tracking Code for https://www.gordonrudman.com -->
+				<script>
+					(function(h,o,t,j,a,r){
+						h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+						h._hjSettings={hjid:1528948,hjsv:6};
+						a=o.getElementsByTagName('head')[0];
+						r=o.createElement('script');r.async=1;
+						r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+						a.appendChild(r);
+					})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+				</script>
+	
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css?cacheBuster=193834923283943842924" />
+		<link rel="stylesheet" href="css/style.css?cacheBuster=193834923283943842924" />
+		<link rel="stylesheet" href="css/style-desktop.css?cacheBuster=193834923283943842924" /> 
+	</noscript>
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+
+	<!-- Don't move this to the bottom. Will result in visual glitches-->
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.remin.js"></script>
+		<script src="js/skel.min.js"></script>
+    	<script src="js/init.min.js"></script> 
+
+        <!--
+	  <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/0.0.9/eon.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/0.0.9/eon.css" />
+  -->
+	</head>
+	<body>
+		<div id="main-area">
+		<div id="content-info"> 
+			<!-- Nav -->
+			<div id="navBar">
+				<nav id="nav">
+					<ul class="container">
+						<li><a href="#top">Home</a></li>
+						<!-- <li><a href="#cv">CV / Résumé</a></li> -->
+						<li><a href="#infographics">Infographics</a></li>
+						<li><a href="#iot">IoT</a></li>
+						<li><a href="#interests">Interests</a></li>
+						<li><a href="#articles">Articles</a></li>
+						<li><a href="#teaching">Teaching</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<!-- <li><a href="#travel">Travel</a></li> -->
+						<!-- <li><a href="#knowledgeResources">Knowledge</a></li> -->
+						<li><a href="#contact">Contact me</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Home -->
+				<div class="wrapper style1 first">
+					<article class="container" id="top">
+						<div class="row">
+							<div class="4u">
+								<span class="image fit"><a href="https://ie.linkedin.com/in/gordonrudman"><img src="images/profilephoto.jpg" alt="" /></a></span>
+							</div>
+							<div class="8u">
+								<header>
+									<h1>Hi, I'm Gordon</h1>
+								</header>
+ 
+								<p>
+									Since the age of 9 I've built up more than 25 years of experience in the Software Development field, in roles all the way up to Head of Engineering. I've had the privilege of working on projects big and small, in diverse industries, solving many complex problems. 
+									<!-- <br/>
+									<br/>
+									I'm currently open to exciting new opportunities, so feel free to <a href="#contact">get in touch</a>. -->
+								</p>
+
+								<!-- <header>
+										<h1>CV / Résumé <i class="fa fa-suitcase fa-lg"></i></h1>
+								</header> -->
+								<h5>CV / Résumé <i class="fa fa-suitcase fa-lg"></i></h5>
+												<ul>
+													<li><b><a href="cv/cv-gordon-rudman.pdf?cacheBuster=193834923283943842925" target="_blank">Normal CV</a></b></li>
+													<li><a href="cv/cv-gordon-rudman-2page.pdf?cacheBuster=193834923283943842925" target="_blank">2 page version (TLDR)</a></li>
+													<li></li><a href="cv/cv-gordon-rudman-technologies.pdf?cacheBuster=193834923283943842925" target="_blank">Appendix with company and technology info</a> </li>
+												</ul>
+							</div>
+						</div>
+					</article>
+					<footer>
+					</footer>
+				</div>
+
+
+							 	
+				<!-- CV / Résumé -->
+				<!-- <div class="wrapper style2">
+						<article id="cv"> 
+								<header>
+										<h2>CV / Résumé <i class="fa fa-suitcase fa-lg"></i></h2>
+								</header>
+								<div class="container">
+									<article class="box style1">
+											<ul>
+													<li><b><a href="cv/cv-gordon-rudman.pdf?cacheBuster=193834923283943842924" target="_blank">My CV</a></b></li>
+													<li><a href="cv/cv-gordon-rudman-2page.pdf?cacheBuster=193834923283943842924" target="_blank">2 page version (TLDR)</a></li>
+													<li></li><a href="cv/cv-gordon-rudman-technologies.pdf?cacheBuster=193834923283943842924" target="_blank">Appendix with company and technology info</a> </li>
+												</ul>
+									</article>
+								</div> 
+						</article>
+					</div>  -->
+			
+			<!-- Infographics -->
+			<div class="wrapper style2">
+					<article id="infographics"> 
+							<h2>Life so far <i class="fa fa-random fa-lg"></i></h2>
+							<div id="main-content">
+									<div id="svg-container">
+											<svg height="804" width="1132" viewBox="0 0 1132 804" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns="http://www.w3.org/2000/svg" style type="text/css">
+												<image x="0" y="0" width="1132px" height="804px" xlink:href="images/infographic-metromap.svg" />
+										</svg>
+									</div>  
+							</div>  
+					</article>
+				</div> 
+
+			
+		
+			<!-- My IoT projects -->  
+			<div class="wrapper style1">
+					<article id="iot"> 
+						<header>
+							<h2>IoT / Electronics projects <i class="fa fa-microchip fa-lg"></i></h2>
+							<p>Real-time updates are temporarily offline for maintence - I need to replace some hardware that got wet :(</p>
+						</header>
+	
+						
+						<div class="container">
+							<div class="disabled shrunkTo50Percent">
+								<h3>Real-time aquarium</h3>
+								<div> 
+									<h5>Temperatures</h5>
+									<div id="Iot_AquariumTemperatureChart"></div>  
+								</div>
+								<br/>
+								<div> 
+									<h5>Lighting</h5>
+									<div id="Iot_AquariumLighting_Grid">
+											<div id="Iot_AquariumLightGauge"></div>
+											<div id="Iot_RoomLightGauge"></div>
+									</div> 
+								</div>	
+							</div>
+
+							<div> 
+								<h5>Controls</h5>
+								<button onclick="turnOn_AquariumLight()">Turn on lights</button>
+								<button onclick="turnOff_AquariumLight()">Turn off lights</button> 
+								<!-- <button onclick="turnOn_AquariumHeater()">Turn on heater</button>
+								<button onclick="turnOff_AquariumHeater()">Turn off heater</button> 
+								<button onclick="turnOn_AquariumPump()">Turn on pump</button>
+								<button onclick="turnOff_AquariumPump()">Turn off pump</button>  -->
+								<p>Please note that it takes a few seconds for the commands to propagate through the internet.</p>
+							</div> 
+							<hr/> 
+							<h3>Coming soon...</h3>
+								<ul>
+									<li>How to guides</li>
+									<li>Convert Aquarium management to be fully event driven</li>
+									<li><i class="fa fa-power-off"></i> More Alexa & Google home integrations</li>
+									<li><i class="fa fa-carrot"></i> Fully automate the management of my strawberry plants</li>
+								</ul>
+						</div>  
+						</div>  
+					</article>
+			</div> 
+
+			<!-- Interests -->
+			<div class="wrapper style2">
+					<article id="interests"> 
+							<header>
+									<h2>My interests <i class="fa fa-rocket fa-lg"></i></h2>
+								</header>
+								<div class="container">
+									<article class="box style1">
+											<ul>
+													<li><a target="_blank" href="https://github.com/GordonRudman/RealtimeTemperatureMonitoring">Internet of Things (IoT, Robotics, Electronics, Arduino)</a></li>
+													<li>Game Development</li>
+													<li><a target="_blank" href="https://500px.com/gordonrudman">Photography</a></li>
+													<li>Squash | Archery | Chess</li>
+													<li><a target="_blank" href="https://www.youtube.com/watch?v=m_qUT94IGJo&t=539s">3D Printing</a></li>
+													<li><a target="_blank" href="https://www.youtube.com/watch?v=PnjqmWocSyc&t=3s">Building / Fixing things</a></li>
+													<li>Artificial Intelligence (AI)</li>
+													<li><a target="_blank" href="https://www.tradingview.com/u/GordonR/">Technical Analysis & Algorithmic Trading</a></li>
+													<li>Engineering, Science, Biology</li>
+													<li><a target="_blank" href="coderdojo.html">Mentoring, Coaching and Teaching</a></li>
+													<li>UX</li>
+													<li><a target="_blank" href="https://app.pluralsight.com/profile/gordonrudman">Constantly learning as much as I can :-)</a></li> 
+											</ul>
+									</article>
+								</div> 
+					</article>
+			</div> 
+
+			<!-- My Articles -->  
+			<div class="wrapper style1">
+					<article id="articles"> 
+							<header>
+									<h2>My random ramblings <i class="fa fa-blog fa-lg"></i></h2>
+								</header>
+								<div class="container">
+									<!-- <article class="box style1"> -->
+											<ul>
+													<li><a target="_blank" href="https://steemit.com/it/@forthecraic/step-by-step-guide-to-transferring-a-domain-from-aws-to-google">Step-by-step guide to transferring a domain from AWS to Google (2017-06-26)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2015/01/12/how-to-trace-mdx-queries-running-on-analysis-services-2/">How to trace MDX queries running on MS Analysis services (2015-01-12)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2015/06/15/6-rules-of-success-by-arnold-schwarzenegger/">6 rules of success by Arnold Schwarzenegger (2015-06-15)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2015/03/10/3d-printing-video-of-my-first-successful-3d-print-being-created/">3D Printing – video of my first successful 3d print being created (2015-03-10)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2015/03/09/adventures-in-3d-printing-part-1-of-hundreds/">3D Printing – Adventures in 3D printing (2015-03-09)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2015/03/05/the-last-piece-of-the-puzzle-has-arrived/">3D Printing - The last piece of the puzzle has arrived!!! ?? (2015-03-05)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2015/02/19/get-115gb-of-free-cloud-storage-from-microsoft/">Get 115GB of free cloud storage from Microsoft (2015-02-19)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2015/01/08/setting-up-my-work-pc-after-ssd-upgrade/">Setting up my work pc – after SSD upgrade (2015-01-08)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2014/11/15/microsoft-added-a-feature-into-entity-framework-for-me/">Microsoft added a feature into Entity Framework for me ?? (2014-11-15)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2014/09/17/how-to-insert-specific-values-into-a-sql-table-with-an-identity-column/">How to insert specific values into a SQL table with an IDENTITY column (2014-09-17)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/nuggets-of-knowledge/software-development/">Software development (2014)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/nuggets-of-knowledge/travel-tips/">Travel tips (2014)</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/nuggets-of-knowledge/photography-2/">Photography (2014</a></li>
+													<li><a target="_blank" href="https://gordonrudman.wordpress.com/2014/09/10/upcoming-articles/">Upcoming articles (2014-09-10)</a></li>
+												</ul> 
+									<!-- </article> -->
+								</div> 
+					</article>
+			</div> 
+
+	<!-- CoderDojo -->
+	<div class="wrapper style2">
+			<article id="teaching">
+				<header>
+					<h2>Teaching</h2>
+				</header>
+				<div class="container">
+					<img src="images/coderdojo/coderdojo.png" alt="coderdojo" />
+					<article class="box style1">
+						<!-- <a href="coderdojo.html" class="image featured" target="_blank"><img srcset="images/coderdojo/coderdojo-tiny.jpg 1x, images/coderdojo/coderdojo-small.jpg 2x, images/coderdojo/coderdojo.jpg 4x" src="images/coderdojo/coderdojo.jpg" alt="CoderDojo"></a> -->
+						<a href="coderdojo.html" class="image featured" target="_blank"><img src="images/coderdojo/coderdojo.jpg" alt="CoderDojo"></a>
+					</article>
+				</div>
+			</article>
+		</div>
+
+	<!-- Programming languages -->
+	<div class="wrapper style1">
+			<article id="skills"> 
+				<h2>What I've learnt so far <i class="fa fa-code fa-lg"></i></h2>
+				<p>
+						Before I forget, for my own personal amusement, and to make the SEO bots happy...<br/>
+						This is some of the stuff I've learnt over the years (or at least used in some decent sized project, or currently learning):
+				</p> 
+				<h3>Software Engineering</h3>
+				<p> 
+						  .Net (async/await, Cryptography, EF, Expression trees, LINQ, Parallel Extensions, Refection, Remoting, Threading, Webservices, WCF, Windows Services, WIF, WinForms, WPF, etc etc)
+						| ActionScript
+						| ADFS 
+						| ADO.Net
+						| Agile 
+						| Ajax
+						| Android
+						| Artificial Intelligence (AI)
+						| Asp.Net Forms
+						| Asp.Net MVC
+						| Asp.Net Core
+						| Assembler / Assembly
+						| AWS
+						| Azure
+						| BASIC (age 9)
+						| BI
+						| Bootstrap
+						| C
+						| C++
+						| C#		
+						| CI/CD		
+						| Com+	 			
+						| Corba				
+						| CSS
+						| Data structures & Algorithmic
+						| DCom
+						| DDD
+						| Delphi 4-8
+						| Delphi.Net
+						| Design patterns
+						| DOS
+						| Dotnet Core
+						| ETW
+						| F#
+						| Flash
+						| Flex						
+						| Google Protocol Buffers			
+						| HTML (2 to 5)
+						| IIS 
+						| Java (Applets, J2EE, JSP, Netbeans, Servlets)							
+						| JavaScript
+						| Jenkins
+						| jQuery 
+						| Kotlin
+						| Knockout JS
+						| Ladder programming
+						| Low-level TCP & UDP
+						| My own custon DSLs (Domain Specific Languages)
+						| MSMQ
+						| Natural 
+						| Networking (TCP & IPX)
+						| NHibernate
+						| NServiceBus
+						| NTFS streams
+						| OpenGL	
+						| Operating Server internals
+						| PRISM
+						| REGEX								
+						| RESTful APIs						
+						| Robotics			
+						| SaaS systems design
+						| Scada design
+						| ServiceFabric
+						| SignalR
+						| Silverlight
+						| Soap
+						| Statistics
+						| SOA
+						| SQL & NoSQL
+						| SQL Server (Advanced)
+						| SQL ServiceBroker
+						| SSIS (for ETL) & SSRS (for reporting)
+						| Swing
+						| TCP
+						| TOGAF
+						| Turbo Pascal
+						| Unity3D
+						| UX design
+						| VB 6
+						| VB.Net
+						| Vue.js
+						| WebOrb
+						| Webservices
+						| Websocket							
+						| Win32	
+						| Windows
+						| Windows Shell Extensions
+						| Xamarin
+						| XMPP
+						| XNA																							
+				</p>
+
+				<h3>Other bits and pieces</h3>
+				<p> 
+						3D design (parametric)
+						| Agile (Scrum, Kanban, XP)
+						| Arduino
+						| Azure DevOps & APIs
+						| DJing and making music
+						| Electronics
+						| IoT
+						| IT (Networking, setting up OSs, partitioning drives, etc)
+						| Kanban
+						| PLCs
+						| Photography
+						| Photoshop						
+						| Project Management
+						| Scrum
+						| SEO (Search Engine Optimization)
+						| Software Project Management (Agile, Waterfall)
+						| Solidworks
+				</p>				
+			 </article>
+		</div> 					 
+				 
+			<!-- Travel built using https://matadornetwork.com/travel-map/ -->  
+			<div class="wrapper style2">
+				<article id="travel">
+					<header>
+						<h2>Places I've been <i class="fa fa-plane fa-lg"></i></h2>
+					</header>
+					<div class="container">
+						<article class="box style1">
+							<!-- <a href="images/my-travel-map.png" class="image featured" target="_blank"><img src="images/my-travel-map.png" alt="My Travel map" /></a> -->
+							<!-- <a href="images/my-travel-map.png" class="image featured" target="_blank"><img srcset="images/my-travel-map-small.png 1x, images/my-travel-map.png 2x" src="images/my-travel-map.png" alt="My Travel map" ></a> -->
+							<a href="images/my-travel-map.png" class="image featured" target="_blank"><img src="images/my-travel-map.png" alt="My Travel map" ></a>
+						</article>
+					</div>
+				</article>
+			</div>
+			
+			<!-- Architecture diagram -->
+			<div class="wrapper style1">
+				<article id="architecture">
+					<header>
+						<h2>Architecture of this website</h2>
+					</header>
+					<p>
+						<b>Pros:</b>
+						Simple hosting model. Fast. Extremely low operational costs (&lt;0.05$/month) | SSL | Great uptime <br/>
+						<b>Cons:</b>
+						The code isn't as clean as I'd like | No dynamic backend | The DNS/redirection stuff is a nightmare | More difficult to implement things like minification <br/>
+						<b>vNext:</b>
+						Realtime dashboard of some of my IoT projects. Comments in Articles (AI for sentiment analysis). Asp.net Core using Blazor. <br/>
+					</p>
+					<div class="container">
+						<article class="box style1">
+								<!-- <iframe width="640" height="360" src="https://miro.com/app/embed/o9J_kxtoYcc=/?" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
+							<!-- <img srcset="images/architecture-tiny.png 1x, images/architecture-small.png 2x, images/architecture.png 4x" src="images/architecture.png" alt="Architecture"> -->
+							<a href="images/architecture-large.png" class="image featured" target="_blank"><img src="images/architecture.png" alt="Architecture"></a>
+						</article>
+					</div>
+				</article>
+			</div>
+
+
+			<!-- Other people's tutorials -->  
+			<div class="wrapper style2">
+					<article id="knowledgeResources"> 
+						<h2>Knowledge Resources <i class="fa fa-book fa-lg"></i></h2>
+						<div class="container">
+							<p>	
+								Content I think is really good or useful in some way:
+								<ul>
+										<li><a target="_blank" href="https://gordonrudman.wordpress.com/2015/04/22/learning-electronics/">Learning electronics</a></li>
+								</ul>  
+							</p>
+  						    <p>Much more content coming soon...which might need an entire page of its own.</p>
+						</div>  
+					</article>
+			</div> 
+
+			<!-- Contact me -->
+				<div class="wrapper style4">
+					<article id="contact" class="container 75%"> 
+						<div class="row">
+							<div class="12u"> 
+								<h2>Contact me <i class="fa fa-comment-dots fa-lg"></i></h2>
+								<a href="mailto:gordonrudman+mywebsite@gmail.com" target="_top">gordonrudman@gmail.com</a> 
+								<ul class="social">
+										<li><a target="_blank" href="https://ie.linkedin.com/in/gordonrudman"><span style="font-size: 19px; color: #006599;"><i class="fab fa-linkedin fa-3x"></i></span></a></li>
+										<li><a target="_blank" href="https://github.com/GordonRudman"><span style="font-size: 19px; color: #FAFAFA;"><i class="fab fa-github fa-3x"></i></span></a></li>
+										<li><a target="_blank" href="https://stackoverflow.com/users/1447668/gordon-rudman"><span style="font-size: 19px; color: #F47920;"><i class="fab fa-stack-overflow fa-3x"></i></span></a></li>
+										<li><a target="_blank" href="https://twitter.com/gordonrudman"><span style="font-size: 19px; color: #2DAAE4;"><i class="fab fa-twitter fa-3x"></i></span></a></li>
+										<li><a target="_blank" href="https://www.youtube.com/channel/UCk-BZbSaBetlh--xj7G8P2g/videos"><span style="font-size: 19px; color: #BF2E25;"><i class="fab fa-youtube fa-3x"></i></span></a></li>
+										<!-- <li><a target="_blank" href="bitcoin:1D2Yt1ZF7WMXctj5JVxyYtDhnCwbiBexPK"><img src="images/my-bitcoin-address.PNG" width="48"></a></li> -->
+										<li><a target="_blank" href="bitcoin:1D2Yt1ZF7WMXctj5JVxyYtDhnCwbiBexPK"><span style="font-size: 19px; color: #FF9900;"><i class="fab fa-bitcoin fa-3x"></i></span></a></li>
+										<li><a target="_blank" href="https://paypal.me/GordonRudman?locale.x=en_US"><span style="font-size: 19px; color: #169BD7;"><i class="fab fa-cc-paypal fa-3x"></i></span></a></li>
+										<li><a target="_blank" href="https://500px.com/gordonrudman"><span style="font-size: 19px; color: #FAFAFA;"><i class="fab fa-500px fa-3x"></i></span></a></li>
+									</ul> 
+							</div>
+						</div> 
+
+						<!-- Send message -->
+						<div>
+							<div class="row">
+								<div class="12u">
+									<form id="gform" class="gform" method="post" action="https://script.google.com/macros/s/AKfycbywbDEdJEqvfYryZMfYZanx52ciQliBAV7c7zbigv9GL4uXs6Zw/exec">
+										<!--input id must be honeypot or else it wont work-->
+										<label class="sr-only">Keep this field blank</label>
+										<input id="honeypot" type="text" name="honeypot" value="" />
+
+										<div>
+											<div class="row">
+												<div class="6u">
+													<input id="name" name="name"  type="text" required placeholder="Name" />
+												</div>
+												<div class="6u">
+													<!-- TODO: fix the styling and then change this back to type="email" -->
+													<input id="email" name="email" type="text" value="" required placeholder="Email" />   
+													<span class="email-invalid" style="display:none; color:red;">Must be valid email address</span>
+												</div>
+											</div>
+											<!-- <div class="row">
+												<div class="12u">
+													<input id="subject" name="subject" type="text" placeholder="Subject" />
+												</div>
+											</div> -->
+											<div class="row">
+												<div class="12u">
+													<textarea id="message" name="message" rows="10" required placeholder="Message"></textarea>
+												</div>
+											</div>
+ 
+
+											<!-- Thankyou Message people See when they submit the form: -->
+											<div class="thankyou_message" style="display:none;">
+												<h3><em>Thanks</em> for contacting me! I'll get back to you soon!</h3>
+											</div>
+
+											<div class="row 200%">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" value="Send"/> </li> 
+														<!-- TODO: <i class="fa fa-paper-plane"></i>  -->
+													</ul>
+												</div>
+											</div>
+										</div> 
+									</form>
+								</div>
+							</div>						
+						</div>
+
+						<footer>
+							<ul id="copyright">
+								<li>&copy; <script>document.write(new Date().getFullYear());</script> Gordon Rudman. All rights reserved.</li>
+							</ul>
+						</footer>
+					</article>
+				</div> 
+				
+			</div> 
+		</div>  
+
+		<script defer src="js/fontawesome/v5.8.1/solid.js" integrity="sha384-IA6YnujJIO+z1m4NKyAGvZ9Wmxrd4Px8WFqhFcgRmwLaJaiwijYgApVpo1MV8p77" crossorigin="anonymous"></script>
+		<script defer src="js/fontawesome/v5.8.1/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+		<script defer src="js/fontawesome/v5.8.1/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+
+		<script defer src="js/svg.min.js"></script>
+		<script defer data-cfasync="false" type="text/javascript" src="js/form-submission-handler.min.js"></script>
+
+ 
+		<script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css" />
+		<script src="js/iot-aquarium.js" crossorigin="anonymous"></script>
+	</body>
+</html>
