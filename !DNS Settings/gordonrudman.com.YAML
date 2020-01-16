@@ -6,8 +6,11 @@
 kind: dns#resourceRecordSet
 name: gordonrudman.com.
 rrdatas:
-- 54.231.131.36
-ttl: 300
+- 185.199.108.153
+- 185.199.109.153
+- 185.199.110.153
+- 185.199.111.153
+ttl: 60
 type: A
 ---
 kind: dns#resourceRecordSet
@@ -31,20 +34,6 @@ type: CNAME
 kind: dns#resourceRecordSet
 name: cv.gordonrudman.com.
 rrdatas:
-- cv.gordonrudman.com.s3-website-eu-west-1.amazonaws.com.
-ttl: 300
-type: CNAME
----
-kind: dns#resourceRecordSet
-name: gh.gordonrudman.com.
-rrdatas:
-- gordonrudman.github.io.
-ttl: 60
-type: CNAME
----
-kind: dns#resourceRecordSet
-name: ghcv.gordonrudman.com.
-rrdatas:
 - gordonrudman.github.io.
 ttl: 60
 type: CNAME
@@ -59,8 +48,8 @@ type: CNAME
 kind: dns#resourceRecordSet
 name: www.gordonrudman.com.
 rrdatas:
-- d14x01s2yjdsn2.cloudfront.net.
-ttl: 300
+- gordonrudman.github.io.
+ttl: 60
 type: CNAME
 ---
 kind: dns#resourceRecordSet

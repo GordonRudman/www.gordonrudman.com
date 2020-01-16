@@ -5,21 +5,22 @@
 ; exporting resource records to a domain that's
 ; managed by a different registrar.
 
-gordonrudman.com. 21600 IN SOA ns-cloud-b1.googledomains.com. cloud-dns-hostmaster.google.com. 54 21600 3600 259200 300
+gordonrudman.com. 21600 IN SOA ns-cloud-b1.googledomains.com. cloud-dns-hostmaster.google.com. 61 21600 3600 259200 300
 gordonrudman.com. 21600 IN NS ns-cloud-b1.googledomains.com.
 gordonrudman.com. 21600 IN NS ns-cloud-b2.googledomains.com.
 gordonrudman.com. 21600 IN NS ns-cloud-b3.googledomains.com.
 gordonrudman.com. 21600 IN NS ns-cloud-b4.googledomains.com.
-gordonrudman.com. 300 IN A 54.231.131.36
+gordonrudman.com. 60 IN A 185.199.108.153
+gordonrudman.com. 60 IN A 185.199.109.153
+gordonrudman.com. 60 IN A 185.199.110.153
+gordonrudman.com. 60 IN A 185.199.111.153
 gordonrudman.com. 3600 IN MX 5 gmr-smtp-in.l.google.com.
 gordonrudman.com. 3600 IN MX 10 alt1.gmr-smtp-in.l.google.com.
 gordonrudman.com. 3600 IN MX 20 alt2.gmr-smtp-in.l.google.com.
 gordonrudman.com. 3600 IN MX 30 alt3.gmr-smtp-in.l.google.com.
 gordonrudman.com. 3600 IN MX 40 alt4.gmr-smtp-in.l.google.com.
 _domainconnect.gordonrudman.com. 21600 IN CNAME connect.domains.google.com.
-cv.gordonrudman.com. 300 IN CNAME cv.gordonrudman.com.s3-website-eu-west-1.amazonaws.com.
-gh.gordonrudman.com. 60 IN CNAME gordonrudman.github.io.
-ghcv.gordonrudman.com. 60 IN CNAME gordonrudman.github.io.
+cv.gordonrudman.com. 60 IN CNAME gordonrudman.github.io.
 resume.gordonrudman.com. 3600 IN CNAME ghs.googlehosted.com.
-www.gordonrudman.com. 300 IN CNAME d14x01s2yjdsn2.cloudfront.net.
+www.gordonrudman.com. 60 IN CNAME gordonrudman.github.io.
 zenith.gordonrudman.com. 3600 IN CNAME ghs.googlehosted.com.
