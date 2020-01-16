@@ -1,0 +1,71 @@
+# A .YAML file is used to export DNS records to a
+# domain managed by Google Cloud. The format is
+# exclusive to Google Cloud DNS.
+
+---
+kind: dns#resourceRecordSet
+name: gordonrudman.com.
+rrdatas:
+- 54.231.131.36
+ttl: 300
+type: A
+---
+kind: dns#resourceRecordSet
+name: gordonrudman.com.
+rrdatas:
+- 5 gmr-smtp-in.l.google.com.
+- 10 alt1.gmr-smtp-in.l.google.com.
+- 20 alt2.gmr-smtp-in.l.google.com.
+- 30 alt3.gmr-smtp-in.l.google.com.
+- 40 alt4.gmr-smtp-in.l.google.com.
+ttl: 3600
+type: MX
+---
+kind: dns#resourceRecordSet
+name: _domainconnect.gordonrudman.com.
+rrdatas:
+- connect.domains.google.com.
+ttl: 21600
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: cv.gordonrudman.com.
+rrdatas:
+- cv.gordonrudman.com.s3-website-eu-west-1.amazonaws.com.
+ttl: 300
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: gh.gordonrudman.com.
+rrdatas:
+- gordonrudman.github.io.
+ttl: 60
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: ghcv.gordonrudman.com.
+rrdatas:
+- gordonrudman.github.io.
+ttl: 60
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: resume.gordonrudman.com.
+rrdatas:
+- ghs.googlehosted.com.
+ttl: 3600
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: www.gordonrudman.com.
+rrdatas:
+- d14x01s2yjdsn2.cloudfront.net.
+ttl: 300
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: zenith.gordonrudman.com.
+rrdatas:
+- ghs.googlehosted.com.
+ttl: 3600
+type: CNAME

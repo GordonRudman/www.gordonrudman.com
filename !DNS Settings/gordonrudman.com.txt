@@ -1,0 +1,25 @@
+; A BIND file is a .TXT file that's used to export
+; DNS records from one domain to another. BIND
+; files are commonly used by lots of domain
+; registrars, so they're a good choice if you're
+; exporting resource records to a domain that's
+; managed by a different registrar.
+
+gordonrudman.com. 21600 IN SOA ns-cloud-b1.googledomains.com. cloud-dns-hostmaster.google.com. 54 21600 3600 259200 300
+gordonrudman.com. 21600 IN NS ns-cloud-b1.googledomains.com.
+gordonrudman.com. 21600 IN NS ns-cloud-b2.googledomains.com.
+gordonrudman.com. 21600 IN NS ns-cloud-b3.googledomains.com.
+gordonrudman.com. 21600 IN NS ns-cloud-b4.googledomains.com.
+gordonrudman.com. 300 IN A 54.231.131.36
+gordonrudman.com. 3600 IN MX 5 gmr-smtp-in.l.google.com.
+gordonrudman.com. 3600 IN MX 10 alt1.gmr-smtp-in.l.google.com.
+gordonrudman.com. 3600 IN MX 20 alt2.gmr-smtp-in.l.google.com.
+gordonrudman.com. 3600 IN MX 30 alt3.gmr-smtp-in.l.google.com.
+gordonrudman.com. 3600 IN MX 40 alt4.gmr-smtp-in.l.google.com.
+_domainconnect.gordonrudman.com. 21600 IN CNAME connect.domains.google.com.
+cv.gordonrudman.com. 300 IN CNAME cv.gordonrudman.com.s3-website-eu-west-1.amazonaws.com.
+gh.gordonrudman.com. 60 IN CNAME gordonrudman.github.io.
+ghcv.gordonrudman.com. 60 IN CNAME gordonrudman.github.io.
+resume.gordonrudman.com. 3600 IN CNAME ghs.googlehosted.com.
+www.gordonrudman.com. 300 IN CNAME d14x01s2yjdsn2.cloudfront.net.
+zenith.gordonrudman.com. 3600 IN CNAME ghs.googlehosted.com.
