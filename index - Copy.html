@@ -1,399 +1,387 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gordon Rudman</title>
-	<!-- <script type="text/javascript"> 	
-					//hack to work around cer errors for www.gordonrudman.com - redirect to https://gordonrudman.com
-					if (window.location.protocol !== 'https:')
-					{
-						if ( (window.location.href.indexOf("127.0.0.1") === -1) && (window.location.href.indexOf("localhost") === -1) && (window.location.href.indexOf("file:") === -1)) //Don't redirect when debugging
-						{
-							 //The replace() method is different than the previous ways because it rewrites the current page in the history. The current page is wiped, so when you click the â€œbackâ€ button, you go back to the page that now is the last visited one.
-							 window.location.replace("https://gordonrudman.com" + window.location.pathname);   //If you want to simulate someone clicking on a link, use  window.location.href  | If you want to simulate an HTTP redirect, use window.location.replace   
-					   }
-				  }
-	 </script> -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume of Gordon Rudman</title>
+<script src="/cdn-cgi/apps/head/QEWNwoPSl2O5LqMXvi595gsiMPg.js"></script><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
 
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: #334960;
+}
+blockquote {
+  font-size: 1em;
+}
 
-  <script src="/cdn-cgi/apps/head/QEWNwoPSl2O5LqMXvi595gsiMPg.js"></script><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <style type="text/css">
-      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-  @charset "utf-8";
-  @-webkit-viewport   { width: device-width; }
-  @-moz-viewport      { width: device-width; }
-  @-ms-viewport       { width: device-width; }
-  @-o-viewport        { width: device-width; }
-  @viewport           { width: device-width; }
+.container{
+  margin-top: 80px;
+  margin-bottom: 15px;
+  background: #fff;
+}
 
-  body{
-    font-family: 'Open Sans', Arial, Tahoma;
-    font-weight: 400;
-    color: #363636;
-    background: #334960;
-  }
-  blockquote {
-    font-size: 1em;
-  }
+#photo-header{
+  margin-top: -75px;
+}
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
+  display: inline-block;
+}
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span{
+  color: #334960;
+  opacity: 0.7;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  content: '';
+  display: block;
+}
 
-  .container{
-    margin-top: 80px;
-    margin-bottom: 15px;
-    background: #fff;
-  }
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.box h2{
+  color: #227c74;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-  #photo-header{
-    margin-top: -75px;
-  }
-  #photo{
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 5px;
-    background: #334960;
-    display: inline-block;
-  }
-  #photo img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
-  #text-header h1{
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-  #text-header h1::first-line{
-    font-size: 1.5em;
-    font-weight: 800;
-    line-height: 1.5em;
-  }
-  #text-header h1 span{
-    color: #334960;
+#awards,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year,
+#education .year{
+  width: 14%;
+  background: #fff;
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: #eee;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#awards .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #eee;
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
     opacity: 0.7;
-  }
-  #text-header h1 sup{
-    opacity: 0.5;
-  }
-  #text-header:after{
-    width: 100%;
-    height: 3px;
-    border-bottom: 1px solid #ddd;
-    margin-top: 15px;
-    content: '';
-    display: block;
-  }
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
 
-  .box{
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-  }
-  .box h2{
-    color: #227c74;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #eee;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
 
-  #awards,
-  #education{
-    margin-top: 20px;
-    margin-bottom: 0;
-    position: relative;
-    padding: 1em 0;
-    list-style: none;
-  }
-  #awards:before,
-  #education:before {
-    width: 5px;
-    height: 100%;
-    position: absolute;
-    left: 35px;
-    top: 0;
-    content: ' ';
-    display: block;
-    background: #32475c;
-    background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-    background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-    background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-    background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-  }
-  #awards li,
-  #education li{
-    width: 100%;
-    z-index: 2;
-    position: relative;
-    float: left;
-  }
-  #awards .year,
-  #education .year{
-    width: 14%;
-    background: #fff;
-    padding: 10px;
-    font-weight: 700;
-    display: inline-block;
-  }
-  #awards .description,
-  #education .description{
-    width: 83%;
-    display: inline-block;
-    background: #eee;
-    margin-bottom: 10px;
-    position: relative;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-  }
-  #awards .description:after,
-  #education .description:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    right: 0;
-    left: -16px;
-    height: 0;
-    width: 0;
-    border: solid transparent;
-    border-right-color: #eee;
-    border-width: 8px;
-    pointer-events: none;
-  }
-  #awards .description h3,
-  #education .description h3{
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-  }
-  #awards .description p,
-  #education .description p{
-    margin-top: 5px;
-    padding: 0;
-  }
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: #334960;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #227c74;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
 
-  .job{
-    margin-bottom: 15px;
-  }
-  .job .details {
-    margin-left: 3%;
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #eee;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-  }
-  .job .where{
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  .job .year{
-    opacity: 0.7;
-  }
-  .job .profession{
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  .job .description{
-    line-height: 1.5em;
-  }
-  .job .highlights{
-    padding: 5px 0;
-    font-weight: bold;
-  }
-  .job .job-details {
-    padding-left: 5%;
-    width: 100%;
-  }
-  .publication {
-    margin-bottom: 0;
-  }
-  .publication .name{
-    font-size: 1em;
-    font-weight: bold;
-  }
-  .publication .year{
-      opacity: 0.7;
-  }
-  .publication p{
-    margin: 0;
-    padding-top: 10px;
-  }
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
 
-  .contact-item{
-    width: 100%;
-    float: left;
-  }
-  .contact-item .icon{
-    padding: 10px;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    color: #32475c;
-    background: #eee;
-  }
-  .contact-item:last-child .icon{
-    border-bottom: none;
-  }
-  .contact-item .title{
-    width: 80%;
-    width: calc(100% - 55px);
-    font-weight: 700;
-    opacity: 0.9;
-  }
-  .contact-item .title.only{
-    margin-top: 10px;
-  }
-  .contact-item .description{
-    width: 80%;
-    width: calc(100% - 55px);
-    color: #334960;
-  }
+    </style>
+<style type="text/css" media="print">
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
+}
 
-  .item-interests,
-  .item-skills{
-    height: 30px;
-    color: #334960;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.1em;
-    font-weight: 600;
-  }
-  .interest,
-  .skill{
-    color: #fff;
-    display: inline-block;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    background: #32475c;
-    position: relative;
-    font-size: .85em;
-  }
-  .skill-level {
-    background-color: #227c74;
-    border-radius: 4px;
-    color: #fff;
-    padding: 1px 8px;
-    font-size: .75em;
-    position: absolute;
-    margin: 1px 10px;
-  }
+a[href]:after {
+  content: none !important;
+}
 
-  #language-skills .skill{
-    margin: 10px 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-  }
+#photo{
+  display: none;
+}
 
-      </style>
-  <style type="text/css" media="print">
-      body {
-    font-size: .95em;
-    -webkit-print-color-adjust: exact;
-  }
+.box {
+  margin-bottom: -10px;
+}
 
-  a[href]:after {
-    content: none !important;
-  }
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests {
+  page-break-inside: avoid;
+}
 
-  #photo{
-    display: none;
-  }
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
 
-  .box {
-    margin-bottom: -10px;
-  }
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
 
-  blockquote,
-  #education,
-  #awards,
-  .contact-item,
-  .publication,
-  .skills,
-  .interests {
-    page-break-inside: avoid;
-  }
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
 
-  .col-sm-5{
-    width: 40%;
-    padding: 0 15px;
-  }
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
 
-  .col-sm-7{
-    width: 60%;
-    padding: 0 15px;
-  }
+#awards .description,
+#education .description,
+.job .details {
+  border: 1px solid #eee;
+}
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
 
-  .skills .col-sm-offset-1,
-  .interests .col-sm-offset-1{
-    margin-top: -10px;
-    margin-bottom: 5px;
-  }
+.badge {
+  margin: 0;
+}
 
-  #education {
-    margin: 0;
-    margin-bottom: -20px;
-  }
-  #awards:before,
-  #education:before {
-    background: none;
-  }
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
 
-  #awards .description,
-  #education .description,
-  .job .details {
-    border: 1px solid #eee;
-  }
-  .publication,
-  .publication .panel-heading,
-  .publication .name{
-    margin: 0;
-    padding: 0 5px;
-    border: none;
-  }
-  .publication .panel-body {
-    padding: 0 10px;
-    margin: 0;
-  }
-
-  .badge {
-    margin: 0;
-  }
-
-  .list-group-item{
-    border: none;
-    margin: 0;
-    padding: 5px 15px;
-  }
-  .list-group-item:after{
-    content: '';
-    position: absolute;
-    top: 8px;
-    right: 0;
-    left: -1px;
-    height: 0;
-    width: 0;
-    border: solid transparent;
-    border-right-color: #999;
-    border-width: 4px;
-    pointer-events: none;
-  }
-
-      </style>
+    </style>
 </head>
 <body>
 <div class="container">
@@ -405,7 +393,7 @@
 <img src="https:&#x2F;&#x2F;cv.gordonrudman.com&#x2F;profilephoto.jpg" alt="avatar">
 </div>
 <div id="text-header">
-<h1>Gordon Rudman<br><span>Software Architect &amp; Engineering Manager</span></h1>
+<h1>Gordon Rudman<br><span>Senior Software Architect &amp; Engineering Manager</span></h1>
 </div>
 </div>
 </div>
@@ -414,8 +402,8 @@
 <div class="col-xs-12 col-sm-7">
 
 <div class="box">
- <h2><i class="fa fa-user ico"></i> About</h2>
-<p>Enthusiastic leader with more than two decades of experience in the software industry - covering many diverse roles, technologies and problem domains. Has a strategic and entrepreneurial mindset with a strong customer and quality focus. Expert in managing the creation of world-class software systems, platforms and teams. Greatly enjoys IoT, game development and solving complex problems, but is also excited to explore other opportunities, in particular broadening Product Management and Strategic experience. Excels at delivering Greenfield projects in innovative, autonomous environments. Proven track record of delivering large-scale, complex products to market. Passionate, creative and forward-thinking leader.</p>
+<h2><i class="fa fa-user ico"></i> About</h2>
+<p>Enthusiastic leader with more than two decades of experience in the software industry - covering many diverse roles, technologies and problem domains. Has a strategic and entrepreneurial mindset with a strong customer and quality focus. Expert in managing the creation of world-class software systems, platforms and teams. Proven track record of delivering large-scale, complex products to market. Particularly excels at solving complex problems while delivering greenfield projects in innovative, autonomous environments. Passionate, creative and forward-thinking leader.</p>
 </div>
 
 <div class="box">
@@ -434,14 +422,11 @@
 <div class="job-details col-xs-11">
 <div class="profession">Senior Engineering Manager</div>
 <div class="description">
-Simultaneously managed software engineering teams from 2 different areas of the business: API Management & Application Integration. Also managed the supporting content team (docs/videos/etc.) which contributed towards multiple products (API Central, API Gateway, API Manager, API Portal).
+Managed three teams, covering two major business areas: API Management & Application Integration.
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Programme manager for inter-departmental (Amplify Central -> Platform) user management uplift project</li>
-<li class="list-group-item">Grew the Dublin branch by interviewing numerous Software Architects, Quality managers and Senior Software Engineers</li>
-<li class="list-group-item">Drove multiple initiatives to speed up the software development process.</li>
-<li class="list-group-item">Achieved 4x improvement in agility (cycle-time) while improving code quality by introducing Kanban.</li>
-<li class="list-group-item">The API Management side of the business was successflly migrated to a docs-as-code approach, allowing customers (and engineers) to contribute directly to the documentation.</li>
+<li class="list-group-item">Drove multiple initiatives to improve the software development process, achieving 4x improvement in cycle-time while also improving quality.</li>
+<li class="list-group-item">Heavily involved in interviewing numerous Software Architects, Product Owners, Quality Managers and Senior Software Engineers.</li>
 </ul>
 </div>
 </div>
@@ -452,7 +437,7 @@ Simultaneously managed software engineering teams from 2 different areas of the 
 <div class="details">
 <div class="where">Self-employed</div>
 <div class="address">
-<a href="https:&#x2F;&#x2F;gordonrudman.com" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;gordonrudman.com</a>
+<a href="https:&#x2F;&#x2F;www.gordonrudman.com" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;www.gordonrudman.com</a>
 </div>
 <div class="year">December 2017 – June 2018</div>
 </div>
@@ -461,10 +446,11 @@ Simultaneously managed software engineering teams from 2 different areas of the 
 <div class="job-details col-xs-11">
 <div class="profession">Day Trader</div>
 <div class="description">
-Self-taught Day Trading and Technical Analysis. Also learnt about Cryptocurrencies and how Blockchains work.
+Learnt how to day trade and swing trade.
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Successfully conducted Fundamental and Technical Analysis to Day trade and Swing trade.</li>
+<li class="list-group-item">Successfully applied Technical Analysis to trade cryptocurrencies on multiple markets.</li>
+<li class="list-group-item">Learnt how cryptocurrencies and blockchains work under the hood, and started building an automated arbitrage system.</li>
 </ul>
 </div>
 </div>
@@ -484,19 +470,16 @@ Self-taught Day Trading and Technical Analysis. Also learnt about Cryptocurrenci
 <div class="job-details col-xs-11">
 <div class="profession">Senior Software Architect &amp; Software Development Manager</div>
 <div class="description">
+Responsible for the design, creation and management of Asavie's E-commerce platform, which sells secure IoT connectivity on-demand. https://www.asavie.com/secure-iot-connectivity-marketplace/
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Managed the E-commerce/Platform team (Recruitment, mentoring, goal setting / KPIs, conflict resolution, team building).</li>
-<li class="list-group-item">Acting Product Manager for the Platform/Foundation services (like Identify Management/SSO)</li>
-<li class="list-group-item">Interviewed many engineers and testers to grow the engineering department.</li>
-<li class="list-group-item">Defined the processes, interactions and architecture for the E-commerce platform (www.iSimplyConnect.com).</li>
-<li class="list-group-item">Responsible for running the E-commerce and Platform production environments.</li>
-<li class="list-group-item">Setup LiveOps/DevOps and Continuous Deployments for multiple projects.</li>
-<li class="list-group-item">Introduced the company to full ALM (Application Life-cycle Management).</li>
-<li class="list-group-item">Primary VSTS (Azure DevOps) Account Owner/Administrator for the company.</li>
-<li class="list-group-item">Worked on multiple Proof of Concepts and product definitions.</li>
-<li class="list-group-item">Steering committee member: Unified 3rd party communication tools across the entire organisation within 2 months.</li>
-<li class="list-group-item">Researched Cloud technologies (Azure and AWS), and built the E-commerce platform and other products using them.</li>
+<li class="list-group-item">Defined the architecture and processes for the E-commerce platform, and related projects.</li>
+<li class="list-group-item">Built the E-commerce/Platform team from the ground up, and managed them through the successful completion of the project.</li>
+<li class="list-group-item">Responsible for running the E-commerce production environment - Used LiveOps/DevOps and CI/CD principles & practices to safely deploy to production multiple times per day, thus reducing time-to-market as well as overall risk.</li>
+<li class="list-group-item">Software Architect (and acting Technical Product Manager) for internal foundation services (Identify Management/SSO, messaging, encryption, etc.)</li>
+<li class="list-group-item">Laid the foundations for a robust event-driven Microservices ecosystem to be used to create the future products/services.</li>
+<li class="list-group-item">Significantly improved the software development processes & tooling.</li>
+<li class="list-group-item">Helped grow the company by interviewing many engineers.</li>
 </ul>
 </div>
 </div>
@@ -516,7 +499,11 @@ Self-taught Day Trading and Technical Analysis. Also learnt about Cryptocurrenci
 <div class="job-details col-xs-11">
 <div class="profession">Principal Software Engineer &amp; ScrumMaster (R&amp;D)</div>
 <div class="description">
-Led multinational R&D teams (Ireland, USA, China and India), conducting research projects and building prototypes. Tested technologies and performed benchmarks related to Messaging, Complex Event Processing and Real-time Reporting.
+Led multinational R&D teams (Ireland, USA, China and India), trailblazing new ideas through research projects and building prototypes.
+<div class="highlights">Highlights</div>
+<ul class="list-group">
+<li class="list-group-item">Concentrated on creating event-driven systems that enable Complex Event Processing and Real-time Analytics & Reporting</li>
+</ul>
 </div>
 </div>
 </div>
@@ -537,10 +524,8 @@ Led multinational R&D teams (Ireland, USA, China and India), conducting research
 <div class="description">
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Onsite customer engagement, requirements gathering and stakeholder management. Defined the Why, What and How.</li>
-<li class="list-group-item">Collaborated with the leaders of multiple departments to create a system which automatically prints, and seals, thousands of personalised insurance claim letters each month. This system replaced the need for an entire department.</li>
-<li class="list-group-item">Redesigned key backend system, achieving 50x increase in performance.</li>
-<li class="list-group-item">UI expert covering multiple projects.</li>
+<li class="list-group-item">Redesigned key backend system, achieving 50x increase in performance - 'Daily' data import processing time was reduced from 24-48h+ to only 15-30 minutes.</li>
+<li class="list-group-item">Collaborated with the leaders of multiple business units to automate the creation and posting of claims letters, replaced the need for an entire department.</li>
 </ul>
 </div>
 </div>
@@ -560,24 +545,17 @@ Led multinational R&D teams (Ireland, USA, China and India), conducting research
 <div class="job-details col-xs-11">
 <div class="profession">Head of Software Engineering &amp; Enterprise Architect (Group IT)</div>
 <div class="description">
+Performed the dual roles of Head of Software Engineering and Enterprise Architect. Led the entire Software Development function for the group, by working directly with the Managing Directors of the 5 different businesses.
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Reported to the CTO and worked directly with the Managing Directors of the 5 different group businesses.</li>
-<li class="list-group-item">Performed dual roles as Head of Software Engineering and Enterprise Architect.</li>
-<li class="list-group-item">Led the entire Software Development function for the group of businesses.</li>
-<li class="list-group-item">Transformed the culture and corrected significant pre-existing issues.</li>
-<li class="list-group-item">Instilled a culture of quality and craftsmanship.</li>
-<li class="list-group-item">Reversed staff attrition, bringing it down to zero.</li>
-<li class="list-group-item">Restructured the entire software development process.</li>
-<li class="list-group-item">Was actively involved in recruiting and interviewing all new staff members.</li>
-<li class="list-group-item">Trained, mentored and coached staff. Dealt with issues impeding their performance.</li>
-<li class="list-group-item">Prepared the group companies for their first PCI-DSS audit.</li>
-<li class="list-group-item">Eliminated many security and process issues, resulting in PCI-DSS accreditation and new business.</li>
-<li class="list-group-item">Set up fraud prevention mechanisms, audit trails and encrypted communications (for PCI-DSS).</li>
+<li class="list-group-item">Corrected significant pre-existing issues, and instilled a culture of quality and craftsmanship.</li>
+<li class="list-group-item">Restructured the entire software development process, and initiated training and mentoring.</li>
+<li class="list-group-item">The above actions resulted in the complete reversal of the significant pre-existing staff attrition problem, bringing it down to zero and stabilizing the environmemt.</li>
+<li class="list-group-item">Prepared the group companies for their first PCI-DSS audit. Set up fraud prevention mechanisms, audit trails, encrypted communications and eliminated many security and process issues, resulting in PCI-DSS accreditation and new business.</li>
 <li class="list-group-item">Coordinated a B2B initiative, on-boarding a major bank (Santam) as a new partner.</li>
+<li class="list-group-item">Defined software design guidelines and standards for the organization.</li>
 <li class="list-group-item">Guided the architecture and design of all software systems.</li>
-<li class="list-group-item">Improved the performance of numerous key business systems by 100x, by redesigning their databases.</li>
-<li class="list-group-item">Defined software design guidelines and standards for the organisation.</li>
+<li class="list-group-item">Was actively involved in recruiting and interviewing all new staff members.</li>
 </ul>
 </div>
 </div>
@@ -597,13 +575,14 @@ Led multinational R&D teams (Ireland, USA, China and India), conducting research
 <div class="job-details col-xs-11">
 <div class="profession">Team Lead (Group IT)</div>
 <div class="description">
+Led and mentored engineers from very diverse skill sets and cultural backgrounds.
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Led and mentored engineers from very diverse cultural backgrounds and skillsets.</li>
-<li class="list-group-item">Performed essential data recovery operations that allowed ATM solutions to remain in business after a SQL database failure</li>
 <li class="list-group-item">Corrected crippling flaws in vital business systems, enabling accurate interbank settlements.</li>
-<li class="list-group-item">Initiated and executed a coordinated plan to eliminate the root cause(s) of defects affecting thousands of account balances.</li>
+<li class="list-group-item">Initiated and executed a coordinated plan to eliminate the root causes of defects affecting thousands of account balances.</li>
+<li class="list-group-item">Improved the performance of numerous key business systems by 100x, by redesigning their databases.</li>
 <li class="list-group-item">ATM communicator: Created new software system that eliminated the need for expensive 3rd party software and hardware.</li>
+<li class="list-group-item">Personally performed essential data recovery operations that allowed ATM solutions to remain in business after a hard drive failure containing their primary SQL database.</li>
 </ul>
 </div>
 </div>
@@ -623,11 +602,11 @@ Led multinational R&D teams (Ireland, USA, China and India), conducting research
 <div class="job-details col-xs-11">
 <div class="profession">Team Lead (Real-time reporting systems)</div>
 <div class="description">
+Managed staff KPIs, mapped and tracked team deliverables and defined the product architecture.
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Managed the creation of a web-based real-time reporting system, integrating it into the PCM platform.</li>
-<li class="list-group-item">Managed staff KPIs, mapped and tracked team deliverables and defined the product architecture.</li>
-<li class="list-group-item">Key member of special task force to rescue a strategic 5-year-old project. Improved performance of Affiliate Marketing System by many orders of magnitude, increasing its capability from hundreds of players to tens of millions.</li>
+<li class="list-group-item">Managed the creation of a web-based real-time reporting system, integrating it with the PCM platform (mentioned below).</li>
+<li class="list-group-item">Was separately also a key member of a special taskforce, which was assembled in order to rescue a strategic project. The performance of this Affiliate Marketing System was improved by many orders of magnitude, increasing its capacity to handle only a few hundreds players to tens of millions of players, thus saving 5 years worth of offshore development time.</li>
 </ul>
 </div>
 </div>
@@ -645,14 +624,14 @@ Led multinational R&D teams (Ireland, USA, China and India), conducting research
 </div>
 <div class="row">
 <div class="job-details col-xs-11">
-<div class="profession">Software Developer &amp; ScrumMaster</div>
+<div class="profession">Software Developer 2 &amp; ScrumMaster</div>
 <div class="description">
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Player Communication Manager [PCM]: High throughput SaaS Call Centre Management Platform, enabling hundreds of online casinos to communicate with millions of players. Directly resulted in >10% increase in revenue (millions of dollars).</li>
-<li class="list-group-item">Player Tracker: Real-time tracking of millions of players, as they moved through hundreds of different games and systems. </li>
-<li class="list-group-item">Localization system: Standardized and simplified translation and globalization work, significantly reducing translation costs.</li>
-<li class="list-group-item">Learnt Flash as a pet project and built PCM Health Monitor. It provides real-time, interactive status monitoring for the numerous PCM servers, databases and software components. Resulted in early fault-detection, as well as much quicker recovery times, thus improving uptime.</li>
+<li class="list-group-item">Created Player Communication Manager [PCM]: A high throughput SaaS Call Centre Management Platform that enabled hundreds of online casinos to communicate with millions of players. This project directly resulted in >10% increase in revenue (millions of dollars).</li>
+<li class="list-group-item">Created Player Tracker: Real-time tracking of millions of players, as they moved through hundreds of different games and systems.</li>
+<li class="list-group-item">Created a Localization system: Which significantly reduced translation costs, by standardized and simplified translation and globalization work.</li>
+<li class="list-group-item">Learnt Flash and built PCM Health Monitor as a pet project. It currently provides real-time interactive status monitoring for the numerous PCM servers, databases and other software components. Resulted in early fault-detection, as well as much quicker recovery times, greatly improving system stability and uptime.</li>
 </ul>
 </div>
 </div>
@@ -670,12 +649,12 @@ Led multinational R&D teams (Ireland, USA, China and India), conducting research
 </div>
 <div class="row">
 <div class="job-details col-xs-11">
-<div class="profession">Software Developer</div>
+<div class="profession">Software Developer 1</div>
 <div class="description">
 <div class="highlights">Highlights</div>
 <ul class="list-group">
 <li class="list-group-item">Constructed a loyalty management platform for 400+ online casinos, increasing their player retention and revenue.</li>
-<li class="list-group-item">Upgraded the core banking system to support multiple currencies and languages, in anticipation of new industry-inhibiting legislation (which would result in the loss of all US customers), thereby allowing Microgaming to pivot to (and capture) new international markets like Asia.</li>
+<li class="list-group-item">Enhanced Microgaming's core banking system to support multiple currencies and languages, thereby allowing them to capture new international markets (like Asia & South America).</li>
 </ul>
 </div>
 </div>
@@ -695,12 +674,12 @@ Led multinational R&D teams (Ireland, USA, China and India), conducting research
 <div class="job-details col-xs-11">
 <div class="profession">Technical lead (Platform)</div>
 <div class="description">
-Architect for the next generation platform for application development, which was used by all new products. Reported directly to the Technical Director.
+Technical lead / Architect for the next generation platform for application development, which was used by all new products. Reported directly to the Technical Director.
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Conceived of and built a (plugin based) automated application delivery system (a few years ahead of MS ClickOnce)</li>
-<li class="list-group-item">Designed the low-level TCP protocols for the (STT/Accenture) Johannesburg Stock Exchange trading engine project</li>
-<li class="list-group-item">Created and conducted training courses and presentations about the new platform, and C# .Net</li>
+<li class="list-group-item">Conceived of and built a (plugin based) automated application delivery system (a few years ahead of MS ClickOnce), which greatly simplified the deployment of aplication updates for all the systems built on top of the 'Shell platform'.</li>
+<li class="list-group-item">Designed the low-level TCP protocols for the (STT/Accenture) Johannesburg Stock Exchange trading engine project.</li>
+<li class="list-group-item">Conducted training courses and presentations about the new platform, and C# .Net.</li>
 </ul>
 </div>
 </div>
@@ -711,7 +690,7 @@ Architect for the next generation platform for application development, which wa
 <div class="details">
 <div class="where">Self-employed</div>
 <div class="address">
- <a href="https:&#x2F;&#x2F;gordonrudman.com" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;gordonrudman.com</a>
+<a href="https:&#x2F;&#x2F;www.gordonrudman.com" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;www.gordonrudman.com</a>
 </div>
 <div class="year">January 1992 – January 2004</div>
 </div>
@@ -722,10 +701,10 @@ Architect for the next generation platform for application development, which wa
 <div class="description">
 <div class="highlights">Highlights</div>
 <ul class="list-group">
-<li class="list-group-item">Age 19: Created robotics software for Ford and Mazda - Automated the entire South African phosphate plant</li>
-<li class="list-group-item">Age 14 to 18: Built bespoke software systems and websites for numerous businesses</li>
-<li class="list-group-item">Age 11 to 12: Ran a model toy factory (with 3 full-time employees). Designed, manufactured and sold functional metal canons (that used fireworks as ammunition)</li>
-<li class="list-group-item">Age 9: Self-taught software development from books and magazines, and created games and farm management software</li>
+<li class="list-group-item">Age 19: Created robotics software for Ford and Mazda - Automated the entire South African phosphate plant.</li>
+<li class="list-group-item">Age 14 to 18: Built bespoke software systems and websites for numerous businesses.</li>
+<li class="list-group-item">Age 11 to 12: Ran a model toy factory (with 3 full-time employees). Designed, manufactured and sold functional toy canons (made from metal and used fireworks as ammunition).</li>
+<li class="list-group-item">Age 9: Learnt to program, and created software to manage a commercial farm (and some games too).</li>
 </ul>
 </div>
 </div>
@@ -742,14 +721,14 @@ Architect for the next generation platform for application development, which wa
 <div class="address">
 <a href="https:&#x2F;&#x2F;coderdojo.com&#x2F;" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;coderdojo.com&#x2F;</a>
 </div>
-<div class="year"> – Present</div>
+<div class="year">November 2015 – December 2015</div>
 </div>
 </div>
 <div class="row">
 <div class="col-xs-11 pull-right">
 <div class="profession">Teacher&#x2F;Mentor</div>
 <div class="description">
-Taught electronics and software development using the Arduino platform.
+Taught electronics and software development to children using the Arduino platform.
 </div>
 </div>
 </div>
@@ -766,11 +745,11 @@ Taught electronics and software development using the Arduino platform.
 </div>
 <div class="contact-item">
 <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-<div class="title only pull-right"><a href="mailto:hire.gordonrudman@gmail.com" target="_blank"><span class="__cf_email__">hire.gordonrudman@gmail.com</span></a></div>
+<div class="title only pull-right"><a href="/cdn-cgi/l/email-protection#5e36372c3b7039312c3a31302c2b3a333f301e39333f3732703d3133" target="_blank"><span class="__cf_email__" data-cfemail="51393823347f363e23353e3f2324353c303f11363c30383d7f323e3c">[email&#160;protected]</span></a></div>
 </div>
 <div class="contact-item">
 <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
-<div class="title only pull-right"><a href="https:&#x2F;&#x2F;gordonrudman.com" target="_blank">https:&#x2F;&#x2F;gordonrudman.com</a></div>
+<div class="title only pull-right"><a href="https:&#x2F;&#x2F;www.gordonrudman.com" target="_blank">https:&#x2F;&#x2F;www.gordonrudman.com</a></div>
 </div>
 <div class="contact-item">
 <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
@@ -823,7 +802,14 @@ Taught electronics and software development using the Arduino platform.
 <h2><i class="fa fa-tasks ico"></i> Skills</h2>
 <div class="skills clearfix">
 <div class="item-skills">
-Leadership &#x2F; Mentoring &amp; coaching
+Leadership
+</div>
+<div class="col-sm-offset-1 col-sm-12 clearfix">
+</div>
+</div>
+<div class="skills clearfix">
+<div class="item-skills">
+Mentoring &amp; coaching
 </div>
 <div class="col-sm-offset-1 col-sm-12 clearfix">
 </div>
@@ -864,7 +850,7 @@ Risk mitigation
 </div>
 </div>
 <div class="skills clearfix">
- <div class="item-skills">
+<div class="item-skills">
 Microservices &amp; APIs
 </div>
 <div class="col-sm-offset-1 col-sm-12 clearfix">
@@ -898,14 +884,14 @@ Designing greenfield products, PoCs &amp; MVPs
 <h2><i class="fa fa-heart ico"></i> Interests</h2>
 <div class="interests clearfix">
 <div class="item-interests">
-Electronics: IoT &#x2F; Robotics
+Electronics
 </div>
 <div class="col-sm-offset-1 col-sm-12 clearfix">
 </div>
 </div>
 <div class="interests clearfix">
 <div class="item-interests">
-Photography
+IoT &amp; Robotics
 </div>
 <div class="col-sm-offset-1 col-sm-12 clearfix">
 </div>
@@ -913,6 +899,13 @@ Photography
 <div class="interests clearfix">
 <div class="item-interests">
 3D Printing
+</div>
+<div class="col-sm-offset-1 col-sm-12 clearfix">
+</div>
+</div>
+<div class="interests clearfix">
+<div class="item-interests">
+Photography
 </div>
 <div class="col-sm-offset-1 col-sm-12 clearfix">
 </div>
@@ -940,13 +933,13 @@ Learning as much as possible
 </footer>
 </blockquote><br>
 <blockquote>
-<div>I have worked with Gordon Rudman for more than a year. I was the first to be hired, as Senior Software Engineer, under his management at the time and we kept like that for a couple of months until other members joined the team. Those initial months, having Gordon’s dedicated time was good as he clarified my initial doubts and proper presented me with the plan the company had for the following Quarters. During the time I worked with Gordon, I realized that he has a vary of strong skills, from defining software architecture to managing and mentoring people. Nowadays I realized I had a different level of professionalism, I wasn’t mature as I am now as a Software Engineer and I thank you Gordon for this. I took Gordon as my mentor and while working with him I have learned very important lessons in how to deal in certain situations, deal with people and their skills and how to always try to be my best, not only in the technical level but as a person and professional in general. At the time I worked with Gordon, we defined a Microservice Architecture using Event-Sourcing and CQRS to implement an e-commerce application, it was in a fast pace Agile development environment where he drove and mentored us to drive design meetings, sprint reviews, product presentations also manage POs and PMs expectations. He showed to be worried about our career goals and directions and he was always trying to help us, at his best, to achieve our goals. I am sure he will be an outstanding addition to any team and I would definitely work with him again.</div>
+ <div>I have worked with Gordon Rudman for more than a year. I was the first to be hired, as Senior Software Engineer, under his management at the time and we kept like that for a couple of months until other members joined the team. Those initial months, having Gordon’s dedicated time was good as he clarified my initial doubts and proper presented me with the plan the company had for the following Quarters. During the time I worked with Gordon, I realized that he has a vary of strong skills, from defining software architecture to managing and mentoring people. Nowadays I realized I had a different level of professionalism, I wasn’t mature as I am now as a Software Engineer and I thank you Gordon for this. I took Gordon as my mentor and while working with him I have learned very important lessons in how to deal in certain situations, deal with people and their skills and how to always try to be my best, not only in the technical level but as a person and professional in general. At the time I worked with Gordon, we defined a Microservice Architecture using Event-Sourcing and CQRS to implement an e-commerce application, it was in a fast pace Agile development environment where he drove and mentored us to drive design meetings, sprint reviews, product presentations also manage POs and PMs expectations. He showed to be worried about our career goals and directions and he was always trying to help us, at his best, to achieve our goals. I am sure he will be an outstanding addition to any team and I would definitely work with him again.</div>
 <footer>
 <a href="" target="_blank">Alexandre Souza - Senior Software Engineer at Asavie</a>
 </footer>
 </blockquote><br>
 <blockquote>
-<div>It's not very often that you get to work with a professional with a ridiculously high level attention and effectiveness when it comes to manage development operations and documentation; When working on QA Automation it is vital to get as much information and in as straightforward as possible fashion from the dev teams, and that's exactly what I got, faultlessly, any time I interacted with teams managed by Gordon. Working for Asavie Technologies Ltd. in Dublin, I had the pleasure to collaborate with Gordon on a number of projects including e-Commerce and 'Internet of Things' platform development; I am not exagerating when I say his attention and efficiency made my job way easier than it could have been providing clear and well organized code, linear and understandable requirements and documentation and open, flowing collaboration. This made writing automated test cases for projects whose development was managed by Gordon as smooth as a process as it can be. His technical knowledge as well as his development process organization skills also proved very important in a cross-team scenario, where Gordon greatly helped researching and spearheading the adoption of a number of workflow improvements - from a bug reporting system to automated cloud deployment on Microsoft Azure. Equally impressive is his grasp on 'real world scenarios', which helped to preemptively avoid some issues that could, in time, have turned fairly problematic. As a development manager and colleague, Gordon earns my highest recommendation.</div>
+<div>It's not very often that you get to work with a professional with a ridiculously high level attention and effectiveness when it comes to manage development operations and documentation; When working on QA Automation it is vital to get as much information and in as straightforward as possible fashion from the dev teams, and that's exactly what I got, faultlessly, any time I interacted with teams managed by Gordon. Working for Asavie Technologies Ltd. in Dublin, I had the pleasure to collaborate with Gordon on a number of projects including e-Commerce and 'Internet of Things' platform development; I am not exaggerating when I say his attention and efficiency made my job way easier than it could have been providing clear and well organized code, linear and understandable requirements and documentation and open, flowing collaboration. This made writing automated test cases for projects whose development was managed by Gordon as smooth as a process as it can be. His technical knowledge as well as his development process organization skills also proved very important in a cross-team scenario, where Gordon greatly helped researching and spearheading the adoption of a number of workflow improvements - from a bug reporting system to automated cloud deployment on Microsoft Azure. Equally impressive is his grasp on 'real world scenarios', which helped to preemptively avoid some issues that could, in time, have turned fairly problematic. As a development manager and colleague, Gordon earns my highest recommendation.</div>
 <footer>
 <a href="" target="_blank">Alessandro Pacileo - QA Manager at Asavie</a>
 </footer>
