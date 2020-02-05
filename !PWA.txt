@@ -1,0 +1,3 @@
+https://pwa-workshop.js.org/1-manifest/#manifest-fields
+
+https://developers.google.com/web/fundamentals/web-app-manifest
