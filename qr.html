@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            body
+            {
+               display: flex;
+               flex-direction: column;
+               gap: 40px; 
+            }
+
+            h1
+            {
+                text-decoration: underline;
+                text-align:center;
+                margin-bottom: 0px;
+            }
+
+            .qrcode
+            {
+                width: 100%; 
+                text-align:center;
+            }
+            .qrcode > img
+            {
+                width: 80%;
+                aspect-ratio: auto;
+            }
+        </style>
+    </head>
     <body>
-        <div>
-            <h2>VCard - Contact details</h2>
+        <div class="qrcode">
+            <h1>Contact details</h1>
             <img alt="VCard" src="qr/VCard/qr-code (2).svg">
         </div>
 
-        <div>
-            <h2>saascade.com</h2>
+        <div class="qrcode">
+            <h1>saascade.com</h1>
             <img alt="saascade.com" src="qr/saascade.com/qr-code (1).svg">
         </div>
  
-        <div>
-            <h2>LinkedIn</h2>
+        <div class="qrcode">
+            <h1>LinkedIn</h1>
             <img alt="LinkedIn" src="qr/LinkedIn - Gordon/qr-code.svg">
         </div>
     </body>
